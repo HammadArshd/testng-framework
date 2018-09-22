@@ -6,17 +6,29 @@ public class TestNGBasics {
 
 Sequence of execution:
 
-1. Setup System Property for Chrome
-2. launchBrowser
-3. login to app
-4. enter URL
-5. Google Title Test
-6. logout from app
-7. Close Browser
-8. deleteAllCookies
-9. generateReport
+Setup system property for chrome
+launch chrome browser
+login to app
 
- */
+
+enter URL - @BeforeMethod
+google logo test - @Test IMO Alphabetically Picked
+logout from app - @AfterMethod
+
+enter URL - @BeforeMethod
+Google Title Test - @Test IMO Alphabetically Picked
+logout from app - @AfterMethod
+
+enter URL - @BeforeMethod
+searchTest - @Test IMO Alphabetically Picked
+logout from app- @AfterMethod
+
+
+deleteAllCookies
+Close browser
+generateTestReport
+
+*/
 
     @BeforeSuite
     public void setup(){
@@ -42,6 +54,17 @@ Sequence of execution:
     public void googleTitleTest(){
         System.out.println("Google Title Test");
     }
+
+    @Test
+    public void searchTest(){
+        System.out.println("searchTest");
+    }
+
+    @Test
+    public void googleLogoTest(){
+        System.out.println("google logo test");
+    }
+
 
     @AfterMethod
     public void logout(){
