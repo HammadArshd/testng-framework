@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="order">
+        <classes>
+            <class name="mkyong.TestConfig" />
+            <class name="mkyong.TestOrder" />
+        </classes>
+    </test>
+
+    <test name="database">
+        <classes>
+            <class name="mkyong.TestConfig" />
+            <class name="mkyong.TestDatabase" />
+        </classes>
+    </test>
+
+</suite>

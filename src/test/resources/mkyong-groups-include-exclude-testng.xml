@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="database">
+
+        <!--Specify groups to include or exclude-->
+        <groups>
+            <run>
+                <exclude name="brokenTests" />
+                <include name="db" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="mkyong.TestDatabase" />
+        </classes>
+    </test>
+
+</suite>

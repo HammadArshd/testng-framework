@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="order">
+        <packages>
+            <!--Specify package names instead of class names-->
+            <package name="mkyong.*" />
+        </packages>
+    </test>
+
+</suite>
