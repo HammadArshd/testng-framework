@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestNGDependsOnMethods {
+public class DependsOnMethods {
 
     @Test
     public void loginTest(){

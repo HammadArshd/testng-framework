@@ -1,6 +1,6 @@
 import org.testng.annotations.*;
 
-public class TestNGBasics {
+public class Basics {
 
 /*
 
