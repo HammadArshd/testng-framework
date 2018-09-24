@@ -14,4 +14,16 @@
         </classes>
     </test>
 
+    <test name="SeverityAnnotation">
+        <classes>
+            <class name="allureFeature.SeverityTest" />
+        </classes>
+    </test>
+
+    <test name="BehaviourDrivenReporting - @Epic, @Feature, @Story">
+        <classes>
+            <class name="allureFeature.BehaviourDrivenReportingTest" />
+        </classes>
+    </test>
+
 </suite>
