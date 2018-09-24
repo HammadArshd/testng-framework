@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="allureFeatureExample">
+
+    <test name="DescriptionAnnotation">
+        <classes>
+            <class name="allureFeature.DescriptionAnnotationTest" />
+        </classes>
+    </test>
+
+    <test name="StepAnnotation">
+        <classes>
+            <class name="allureFeature.StepAnnotationTest" />
+        </classes>
+    </test>
+
+</suite>
