@@ -8,10 +8,10 @@
             <!--<class name="conceptRefreshNaveen.DependsOnMethods" />-->
             <!--<class name="conceptRefreshNaveen.ExceptionTimeOutTest" />-->
             <!--<class name="conceptRefreshNaveen.GoogleTest" />-->
-            <!--<class name="conceptRefreshNaveen.GoogleTestWithGroups" />-->
+            <class name="conceptRefreshNaveen.GoogleTestWithGroups" />
             <!--<class name="conceptRefreshNaveen.GoogleTestWithPriority" />-->
             <!--<class name="conceptRefreshNaveen.InvocationCountTest" />-->
-            <class name="conceptRefreshNaveen.DescriptionPropertyOfTest" />
+            <!--<class name="conceptRefreshNaveen.DescriptionPropertyOfTest" />-->
         </classes>
     </test>
 

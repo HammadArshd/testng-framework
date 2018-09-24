@@ -25,8 +25,8 @@
 
         <aspectj.version>1.8.10</aspectj.version>
 
-        <!--<suiteXmlFile>conceptRefreshNaveen-testng.xml</suiteXmlFile>-->
-        <suiteXmlFile>allureFeature-testng.xml</suiteXmlFile>
+        <suiteXmlFile>conceptRefreshNaveen-testng.xml</suiteXmlFile>
+        <!--<suiteXmlFile>allureFeature-testng.xml</suiteXmlFile>-->
         <!--<suiteXmlFile>mkyong-testng.xml</suiteXmlFile>-->
         <browser>chrome</browser>
         <threads>3</threads>
@@ -139,6 +139,7 @@
                         <!--<proxyPort>${proxyPort}</proxyPort>-->
                         <explicit.wait.seconds>${explicit.wait.sec}</explicit.wait.seconds>
                     </systemPropertyVariables>
+                    <groups>Link,Logo</groups>
                 </configuration>
                 <dependencies>
                     <dependency>
