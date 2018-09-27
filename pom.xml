@@ -28,6 +28,7 @@
         <suiteXmlFile>conceptRefreshNaveen-testng.xml</suiteXmlFile>
         <!--<suiteXmlFile>allureFeature-testng.xml</suiteXmlFile>-->
         <!--<suiteXmlFile>mkyong-testng.xml</suiteXmlFile>-->
+
         <browser>chrome</browser>
         <threads>3</threads>
         <remote>false</remote>
@@ -42,16 +43,16 @@
 
     </properties>
 
-    <profiles>
+    <!--<profiles>-->
 
-        <profile>
-            <id>singleThreaded</id>
-            <properties>
-                <threads>1</threads>
-            </properties>
-        </profile>
+        <!--<profile>-->
+            <!--<id>singleThreaded</id>-->
+            <!--<properties>-->
+                <!--<threads>1</threads>-->
+            <!--</properties>-->
+        <!--</profile>-->
 
-    </profiles>
+    <!--</profiles>-->
 
 
     <dependencies>
@@ -116,9 +117,51 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testngSuites/${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
+
+                    <properties>
+                        <property>
+                            <name>suitethreadpoolsize</name>
+                            <value>2</value>
+                        </property>
+                        <!--<property>-->
+                            <!--<name>usedefaultlisteners</name>-->
+                            <!--<value>false</value> &lt;!&ndash; disabling default listeners is optional &ndash;&gt;-->
+                        <!--</property>-->
+                        <!--<property>-->
+                            <!--<name>listener</name>-->
+                            <!--<value>com.mycompany.MyResultListener,com.mycompany.MyAnnotationTransformer,com.mycompany.MyMethodInterceptor</value>-->
+                        <!--</property>-->
+                        <!--<property>-->
+                            <!--<name>reporter</name>-->
+                            <!--<value>listenReport.Reporter</value>-->
+                        <!--</property>-->
+                        <!--<property>-->
+                            <!--<name>surefire.testng.verbose</name>-->
+                            <!--<value>10</value> &lt;!&ndash; verbosity level is between 0 and 10 where 10 is the most detailed. You can specify -1 and this will put TestNG in debug mode (no longer slicing off stack traces and all). The default level is 0 &ndash;&gt;-->
+                        <!--</property>-->
+
+                        <!--<property>-->
+                            <!--<name>objectfactory</name>-->
+                            <!--<value>testng.objectfactory.TestNGCustomObjectFactory</value>-->
+                        <!--</property>-->
+
+                        <!--<property>-->
+                            <!--<name>testrunfactory</name>-->
+                            <!--<value>testng.testrunnerfactory.TestNGCustomTestRunnerFactory</value>-->
+                        <!--</property>-->
+
+                        <!--<property>-->
+                            <!--<name>testnames</name>-->
+                            <!--<value>a-t1,a-t3</value>-->
+                        <!--</property>-->
+                    </properties>
+
                     <!--<forkCount>${threads}</forkCount>-->
-                    <!--<reuseForks>false</reuseForks>-->
+                    <!--<reuseForks>true</reuseForks>-->
+                    <!--<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>-->
+                    <!--methods, classes, suites, suitesAndClasses, suitesAndMethods, classesAndMethods or all-->
                     <!--<parallel>methods</parallel>-->
+
                     <argLine>
                          -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
@@ -139,7 +182,7 @@
                         <!--<proxyPort>${proxyPort}</proxyPort>-->
                         <explicit.wait.seconds>${explicit.wait.sec}</explicit.wait.seconds>
                     </systemPropertyVariables>
-                    <groups>Link,Logo</groups>
+                    <!--<groups>Link,Logo</groups>-->
                 </configuration>
                 <dependencies>
                     <dependency>
