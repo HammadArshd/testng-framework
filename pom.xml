@@ -84,6 +84,63 @@
             </properties>
         </profile>
 
+        <profile>
+            <id>runParameterTest</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parameters/parameter-test-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runOptionalParameterTest</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parameters/optional-parameter-test-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runGroupingExample</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/grouping-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runMultiGroupingExample</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/multi-grouping-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runIncludeExcludeGroupExample</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/include-exclude-groups-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runRegularExpressionBasedIncludeExcludeGroupTest</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/regular-expression-include-exclude-group-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runDefaultGroupExample</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/default-group-testng.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runMetaGroupExample</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/grouping/meta-groups-testng.xml</suiteXmlFile>
+                <!--This feature is helpful in creating specific groups for regression, sanity, and module-wise testing.-->
+            </properties>
+        </profile>
+
     </profiles>
 
 

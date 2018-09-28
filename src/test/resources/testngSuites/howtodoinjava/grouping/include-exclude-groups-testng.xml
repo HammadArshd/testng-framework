@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Exclude Group Suite" verbose="1">
+    <test name="Exclude Group Test">
+        <groups>
+            <run>
+                <include name="include-group" />
+                <exclude name="exclude-group" />
+            </run>
+        </groups>
+        <classes>
+            <class name="howtodoinjava.grouping.IncludeExcudeGroupTest" />
+        </classes>
+    </test>
+</suite>
