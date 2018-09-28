@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test-class Suite" parallel="classes" thread-count="2" >
+    <test name="Test-class test" >
+        <classes>
+            <class name="howtodoinjava.parallelism.ParallelClassesTestOne" />
+            <class name="howtodoinjava.parallelism.ParallelClassesTestTwo" />
+        </classes>
+    </test>
+</suite>

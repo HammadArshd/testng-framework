@@ -43,16 +43,48 @@
 
     </properties>
 
-    <!--<profiles>-->
+    <profiles>
 
-        <!--<profile>-->
-            <!--<id>singleThreaded</id>-->
-            <!--<properties>-->
-                <!--<threads>1</threads>-->
-            <!--</properties>-->
-        <!--</profile>-->
+        <profile>
+            <id>singleThreaded</id>
+            <properties>
+                <threads>1</threads>
+            </properties>
+        </profile>
 
-    <!--</profiles>-->
+        <profile>
+            <id>runMethodsInParallel</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parallelism/methods-test-testng.xml</suiteXmlFile>
+                <!--suitethreadpoolsize is irrelevant in this profile, due to methods-test-testng.xml structure-->
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runClassesInParallel</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parallelism/classes-test-testng.xml</suiteXmlFile>
+                <!--suitethreadpoolsize is irrelevant in this profile, due to classes-test-testng.xml structure-->
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runSuitesInParallel</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parallelism/suite-test-testng.xml</suiteXmlFile>
+                <!--suitethreadpoolsize is irrelevant in this profile, due to suite-test-testng.xml structure-->
+            </properties>
+        </profile>
+
+        <profile>
+            <id>runSingleMethodInParallel</id>
+            <properties>
+                <suiteXmlFile>howtodoinjava/parallelism/independent-test-testng.xml</suiteXmlFile>
+                <!--suitethreadpoolsize is irrelevant in this profile, due to independent-test-testng.xml structure-->
+            </properties>
+        </profile>
+
+    </profiles>
 
 
     <dependencies>

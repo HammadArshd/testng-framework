@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Independent test Suite" >
+    <test name="Independent test">
+        <classes>
+            <class name="howtodoinjava.parallelism.IndependentTest" />
+        </classes>
+    </test>
+</suite>
