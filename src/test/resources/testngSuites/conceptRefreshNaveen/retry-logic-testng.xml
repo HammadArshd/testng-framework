@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="conceptRefresh With Naveen">
+
+    <listeners>
+        <listener class-name="conceptRefreshNaveen.retryLogic.AnnotationTransformerDemo"/>
+    </listeners>
+
+    <test name="TestNG Features: Retry Logic">
+        <classes>
+            <class name="conceptRefreshNaveen.retryLogic.BasicTest" />
+        </classes>
+    </test>
+
+</suite>

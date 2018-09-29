@@ -141,6 +141,14 @@
             </properties>
         </profile>
 
+        <profile>
+            <id>runRetryLogic</id>
+            <properties>
+                <suiteXmlFile>conceptRefreshNaveen/retry-logic-testng.xml</suiteXmlFile>
+                <!--This feature is helpful in creating specific groups for regression, sanity, and module-wise testing.-->
+            </properties>
+        </profile>
+
     </profiles>
 
 
